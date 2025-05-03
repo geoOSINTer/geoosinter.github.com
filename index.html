@@ -175,7 +175,7 @@
         if (lonT > 180) lonT -= 360;
         if (lonT <= -180) lonT += 360;
 
-        out.textContent = `目標點 T → 緯度 ${latT.toFixed(6)}°  經度 ${lonT.toFixed(6)}°`;
+        out.textContent = `目標點 T → 緯度 ${latT.toFixed(6)}  經度 ${lonT.toFixed(6)}`;
       } catch (err) {
         out.className = 'result error';
         out.textContent = '錯誤: ' + err.message;
